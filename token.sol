@@ -1760,12 +1760,12 @@ contract TestToken is ERC20, Ownable, SafeToken {
 
     uint256 public buyRewardFee = 0;
     uint256 public buyLiquidityFee = 1;
-    uint256 public buyMarketingFee = 3;
-    uint256 public totalBuyFees = 4;
+    uint256 public buyMarketingFee = 1;
+    uint256 public totalBuyFees = 2;
 
     uint256 public sellRewardFee = 0;
-    uint256 public sellLiquidityFee = 1;
-    uint256 public sellMarketingFee = 3;
+    uint256 public sellLiquidityFee = 2;
+    uint256 public sellMarketingFee = 2;
     uint256 public totalSellFees = 4;
 
     // use by default 300,000 gas to process auto-claiming dividends
