@@ -1751,7 +1751,7 @@ contract TestToken is ERC20, Ownable, SafeToken {
 
     CoinDividendTracker public dividendTracker;
 
-    uint256 public swapTokensAtAmount = 10000 * (10**18);
+    uint256 public swapTokensAtAmount = 50000 * (10**18);
 
 
     address payable public  marketingWallet = payable(0x31b5B830a8B02D79b1933ce7aBDe74230BA3908e);
@@ -1852,7 +1852,7 @@ contract TestToken is ERC20, Ownable, SafeToken {
         node = msg.sender;
         
         //Send supply to owner
-        _mint(owner(), 1000000000 * (10**18));
+        _mint(owner(), 100000000000 * (10**18));
     }
 
     receive() external payable {
